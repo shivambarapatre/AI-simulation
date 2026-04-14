@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1677442136019-21780ecad995') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* SPLIT */
+.split {
+    display: flex;
+    padding: 40px;
+}
+
+.split img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* GLASS */
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* CONTACT */
+.contact-bg {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    background: cyan;
+}
+
+/* BUTTON */
+.btn {
+    padding: 10px 20px;
+    background: cyan;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.image img {
+    width: 1000px;      /* adjust size as needed */
+    height: 250px;      /* keeps aspect ratio */
+    border-radius: 10px; /* optional: makes it look nice */
+    display: block;
+    margin: 20px auto; /* centers the image */
+}
